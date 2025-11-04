@@ -6,11 +6,15 @@ thisFile = matlab.desktop.editor.getActiveFilename;
 rootPath = fileparts(thisFile);
 addpath(genpath(rootPath));  
 
-% Load the incomplete multi-view dataset
+% Load the incomplete multi-view dataset "Yale_MissingRatio0.5"
 dataPath = fullfile(rootPath, '/Data/Yale_MissingRatio0.5.mat');
 load(dataPath); 
 
-% Configure hyperparameters for the ATSL-IMUFS algorithm
+% Configure the hyperparameters for the ATSL-IMUFS algorithm
+% For the "Yale_MissingRatio0.5" dataset, the following parameter values yield the best performance.
+% For other datasets, the optimal parameters can be identified via grid search, 
+% where beta and eta are chosen from {10^{-3}, 10^{-2}, 10^{-1}, 1, 10, 10^{2}, 10^{3}}, 
+% and r is selected from {2, 3, 4, 5, 6}.
 options = []; 
 options.beta = 0.001;  
 options.eta = 0.001; 
