@@ -18,3 +18,18 @@ The MATLAB implementation of ATSL-IMUFS is provided in the `ATSL-IMUFS` director
 ## Demo
 
 An example usage of the proposed algorithm is provided in **`Main.m`**.
+
+------
+
+## Citation
+
+If you find our approach useful in your research, please cite the following reference:
+
+```bibtex
+@ARTICLE{xu2025adaptive,
+  author={Xu, Lin and Li, Ke and Wang, Dongjie and Zhou, Fanyin and Lv, Fengmao and Li, Tianrui and Huang, Yanyong},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  title={Adaptive Topological Similarity Learning for Incomplete Multi-view Unsupervised Feature Selection},
+  year={2025},
+  doi={10.1109/TCSVT.2025.3642753}
+}
